@@ -22,7 +22,21 @@
                 "isDefault": true
             },
             "detail": "调试器生成的任务。"
-        }
+        },
+        {
+            "label": "Delete Current File",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
     ],
     "version": "2.0.0"
 }
